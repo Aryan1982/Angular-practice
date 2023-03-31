@@ -6,32 +6,50 @@ import { Todo } from "../../Todo";
   templateUrl: './todos.component.html',
   styleUrls: ['./todos.component.css']
 })
-export class TodosComponent implements OnInit{
+export class TodosComponent{
   todos:Todo[];
 
   constructor(){
     this.todos=[
       {
         sno:1,
-        title:"heya",
-        dsc:"hmmmm",
+        title:"helloo1",
+        dsc:"test1",
         active:true,
       },
       {
         sno:2,
-        title:"heya",
-        dsc:"hmmmm",
+        title:"helloo2",
+        dsc:"test2adfa",
         active:true,
       },
       {
         sno:3,
-        title:"heya",
-        dsc:"hmmmm",
+        title:"helloo3",
+        dsc:"test3adfa",
+        active:true,
+      },
+      {
+        sno:4,
+        title:"helloo3",
+        dsc:"testasdfsd",
+        active:true,
+      },
+      {
+        sno:5,
+        title:"helloo3",
+        dsc:"testadfsdf",
+        active:true,
+      },
+      {
+        sno:6,
+        title:"helloo3",
+        dsc:"testasdfasdfd",
         active:true,
       }
     ]
   }
-  ngOnInit():void{
+  // ngOnInit():void{
 
-  }
+  // }
 }
