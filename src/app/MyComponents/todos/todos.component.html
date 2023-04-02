@@ -1,5 +1,5 @@
-<div *ngFor="let todo of todos">
-	<app-todoitem [todo]="todo">
+<div *ngFor="let todo of todos" class="d-flex justify-content-center">
+	<app-todoitem [todo]="todo" (todoDelete)="deleteTodo($event)">
 		
 	</app-todoitem>
 </div><br/>

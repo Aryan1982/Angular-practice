@@ -3,4 +3,5 @@ export class Todo {
     title: string;
     dsc: string;
     active: boolean;
+    link: string;
 }
