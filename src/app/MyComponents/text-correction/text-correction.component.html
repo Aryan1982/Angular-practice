@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+	<textarea type="text" placeholder="add your text" [(ngModel)]="inputText"></textarea>
+	<button (click)="editText()">Submit</button>
+
+	<div *ngIf="outputText">
+		<textarea class="outputTextarea" type="text" [value]="outputText" readonly></textarea>
+	</div>
+	
+	<!-- <p>{{inputText}}</p> -->
+</body>
+</html>
+

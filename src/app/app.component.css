@@ -1,0 +1,31 @@
+.home{
+	background-color: transparent;
+}
+.home h1{
+	margin-bottom: 20px;
+	text-align: center;
+	font-family: poppins;
+	margin-top: 50px;
+	margin-bottom: 20px;
+}
+nav{
+	display: flex;
+    /* justify-content: space-between; */
+    width: 100%;
+    justify-content: space-around;
+    margin-bottom: 30px;
+}
+
+nav button{
+		background-color: #212121;
+	color:white;
+	border-radius: 5px;
+	font-family: Poppins;
+	width: 138px;
+	transition: 0.20s;
+}
+
+nav button:hover{
+	scale:1.1;
+	transition: 0.20s;
+}

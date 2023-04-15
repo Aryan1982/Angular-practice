@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { TodosComponent } from './todos.component';
+import { TextCorrectionComponent } from './text-correction.component';
 
-describe('TodosComponent', () => {
-  let component: TodosComponent;
-  let fixture: ComponentFixture<TodosComponent>;
+describe('TextCorrectionComponent', () => {
+  let component: TextCorrectionComponent;
+  let fixture: ComponentFixture<TextCorrectionComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ TodosComponent ]
+      declarations: [ TextCorrectionComponent ]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(TodosComponent);
+    fixture = TestBed.createComponent(TextCorrectionComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

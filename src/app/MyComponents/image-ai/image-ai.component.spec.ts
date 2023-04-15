@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { TodoitemComponent } from './todoitem.component';
+import { ImageAIComponent } from './image-ai.component';
 
-describe('TodoitemComponent', () => {
-  let component: TodoitemComponent;
-  let fixture: ComponentFixture<TodoitemComponent>;
+describe('ImageAIComponent', () => {
+  let component: ImageAIComponent;
+  let fixture: ComponentFixture<ImageAIComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ TodoitemComponent ]
+      declarations: [ ImageAIComponent ]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(TodoitemComponent);
+    fixture = TestBed.createComponent(ImageAIComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

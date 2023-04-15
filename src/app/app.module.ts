@@ -1,22 +1,27 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
+import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { TodosComponent } from './MyComponents/todos/todos.component';
-import { TodoitemComponent } from './MyComponents/todoitem/todoitem.component';
+import { FormsModule } from '@angular/forms';
+import { TextCorrectionComponent } from './MyComponents/text-correction/text-correction.component';
+import { ImageAIComponent } from './MyComponents/image-ai/image-ai.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    TodosComponent,
-    TodoitemComponent
+    TextCorrectionComponent,
+    ImageAIComponent,
+
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
+
 export class AppModule { }
