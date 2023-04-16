@@ -7,7 +7,7 @@ import * as dotenv from 'dotenv';
   templateUrl: './image-ai.component.html',
   styleUrls: ['./image-ai.component.css']
 })
-dotenv.config();
+// dotenv.config();
 export class ImageAIComponent {
  prompt: any;
  objects:any;
@@ -19,7 +19,7 @@ export class ImageAIComponent {
   url: 'https://openai80.p.rapidapi.com/images/generations',
   headers: {
     'content-type': 'application/json',
-    'X-RapidAPI-Key': `"${process.env.RAPIDAPI_KEY}"`,
+    'X-RapidAPI-Key': '0a1e34d952msh02e830b8ce7b222p115ec2jsn9533e0a4a51c',
     'X-RapidAPI-Host': 'openai80.p.rapidapi.com'
   },
   data: `{"prompt":"${this.prompt}","n":1,"size":"1024x1024"}`

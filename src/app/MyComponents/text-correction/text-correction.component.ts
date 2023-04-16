@@ -8,7 +8,7 @@ import * as dotenv from 'dotenv';
   templateUrl: './text-correction.component.html',
   styleUrls: ['./text-correction.component.css']
 })
-dotenv.config();
+// dotenv.config();
 export class TextCorrectionComponent {
   inputText:string;
   outputText:string;
@@ -21,7 +21,7 @@ export class TextCorrectionComponent {
   url: 'https://openai80.p.rapidapi.com/edits',
   headers: {
     'content-type': 'application/json',
-    'X-RapidAPI-Key': `"${process.env.RAPIDAPI_KEY}"`,
+    'X-RapidAPI-Key': '0a1e34d952msh02e830b8ce7b222p115ec2jsn9533e0a4a51c',
     'X-RapidAPI-Host': 'openai80.p.rapidapi.com'
   },
   data: `{"model":"text-davinci-edit-001","input":"${this.inputText}","instruction":"Fix the spelling mistakes"}`
