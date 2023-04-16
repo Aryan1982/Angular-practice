@@ -1,10 +1,14 @@
 import { Component } from '@angular/core';
 import axios from 'axios';
+import * as dotenv from 'dotenv';
+
+
 @Component({
   selector: 'app-text-correction',
   templateUrl: './text-correction.component.html',
   styleUrls: ['./text-correction.component.css']
 })
+dotenv.config();
 export class TextCorrectionComponent {
   inputText:string;
   outputText:string;
@@ -17,7 +21,7 @@ export class TextCorrectionComponent {
   url: 'https://openai80.p.rapidapi.com/edits',
   headers: {
     'content-type': 'application/json',
-    'X-RapidAPI-Key': '9f7c760327mshd4c0b7c94270680p141641jsn6313e25678e0',
+    'X-RapidAPI-Key': `"${process.env.RAPIDAPI_KEY}"`,
     'X-RapidAPI-Host': 'openai80.p.rapidapi.com'
   },
   data: `{"model":"text-davinci-edit-001","input":"${this.inputText}","instruction":"Fix the spelling mistakes"}`
