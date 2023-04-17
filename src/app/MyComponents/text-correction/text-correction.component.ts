@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
 import axios from 'axios';
-import * as dotenv from 'dotenv';
 
 
 @Component({
@@ -10,6 +9,7 @@ import * as dotenv from 'dotenv';
 })
 // dotenv.config();
 export class TextCorrectionComponent {
+  
   inputText:string;
   outputText:string;
 
