@@ -13,7 +13,7 @@ export class ImageAIComponent {
  objects:any;
 
  getImage(){
-  // console.log("loading")
+  console.log("loading")
   const options = {
   method: 'POST',
   url: 'https://openai80.p.rapidapi.com/images/generations',
